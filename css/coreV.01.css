@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+    background-color: #D5D5D7;
+    
+}
+
+.body{
+    border: 50px, solid, rgb(255, 0, 0);
+    
+    margin: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.headImg{
+    height: 150px;
+    width: 150px;
+}

@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<title>PolluWeb</title>
+		<link rel="stylesheet" href="output.css"/>
+		<link rel="stylesheet" href="css/core.css"/>
+	</head>
+
+	
+	<body class="overflow-x-hidden" id="bodey">
+		<div>
+			<div class="header">
+				<img src="images/pigeon.jpg" title="La pollution engendré par le web" style="width: 75px; height: 75px;"/>
+				<h1 class="website-title text-5xl font-mono text-center self-center object-center" style="text-align: center;">Le pigeon en colère</h1>
+			</div>
+			<div class="mx-auto bg-gray-400 flex">
+				<div class="flex-1 text-center text-2xl border-solid border-4 bg-gray-500 menuButton" style="color: whitesmoke;">Accueil</div>
+				<div class="flex-1 text-center text-2xl border-solid border-4 bg-gray-500 menuButton" style="color: whitesmoke;">Journal</div>
+				<div class="flex-1 text-center text-2xl border-solid border-4 bg-gray-500 menuButton" style="color: whitesmoke;">Articles</div>
+				<div class="flex-1 text-center text-2xl border-solid border-4 bg-gray-500 menuButton" style="color: whitesmoke;">Sondages</div>
+			</div>
+		</div>
+		
+		<div  class="mx-auto relative">
+			<img src="images/forestB.jpeg" class="object-cover w-full h-24"/>
+			<h1 class="title absolute object-center text-red-800 text-4xl font-light" style="top: 25%; left: 20%;">Les effets négatifs de l'utilisation du WEB sur l'environnement</h1>
+		</div name="article">
+		<div class="mx-auto relative flex">
+			<div class="inset-y-0 left-0 w-32" name="menu-gauche" id="menuLeft" style="background: linear-gradient(#2C5282,99%, #C0C0C0);">
+				<div style="width: auto; height: min-content; color: snow; text-align: center; position: relative;" id="shareMenu" >
+					<h1 class="text-2xl">Menu:</h1>
+					<br>
+					<svg class="inline-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart" wtx-context="B4FB341F-8DB2-4B34-8B5C-100817233FE4"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+					<div style="font-size: larger;" class="inline-flex">J'aime!</div>
+					<br>
+					<br>
+					<br>
+					<div class="text-xl">Partager</div>
+					<br>
+					<br>
+					<svg class="inline-flex"viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+					<div style="font-size: larger;" class="inline-flex" onclick="window.open('https://facebook.com/','_blank')">Facebook</div>
+					<br>
+					<br>
+					<svg class="inline-flex" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+					<div style="font-size: larger;" class="inline-flex" onclick="window.open('https://instagram.com/','_blank')">Instagram</div>
+					<br>
+					<br>
+					<svg class="inline-flex" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+					<div style="font-size: larger;" class="inline-flex" onclick="window.open('https://twitter.com/', '_blank')">Twitter</div>
+					<br>
+					<br>
+					<svg class="inline-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M5.829 4.533c-.6 1.344-.363 3.752-.267 5.436-.648.359-1.48-.271-1.951-.271-.49 0-1.075.322-1.167.802-.066.346.089.85 1.201 1.289.43.17 1.453.37 1.69.928.333.784-1.71 4.403-4.918 4.931-.251.041-.43.265-.416.519.056.975 2.242 1.357 3.211 1.507.099.134.179.7.306 1.131.057.193.204.424.582.424.493 0 1.312-.38 2.738-.144 1.398.233 2.712 2.215 5.235 2.215 2.345 0 3.744-1.991 5.09-2.215.779-.129 1.448-.088 2.196.058.515.101.977.157 1.124-.349.129-.437.208-.992.305-1.123.96-.149 3.156-.53 3.211-1.505.014-.254-.165-.477-.416-.519-3.154-.52-5.259-4.128-4.918-4.931.236-.557 1.252-.755 1.69-.928.814-.321 1.222-.716 1.213-1.173-.011-.585-.715-.934-1.233-.934-.527 0-1.284.624-1.897.286.096-1.698.332-4.095-.267-5.438-1.135-2.543-3.66-3.829-6.184-3.829-2.508 0-5.014 1.268-6.158 3.833z" fill=""/></svg>
+					<div style="font-size: larger;" class="inline-flex" onclick="window.open('https://www.snapchat.com/l/fr-fr/', '_blank')">Snapchat</div>
+					<br>
+					<br>
+					<svg  class="inline-flex" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+					<div style="font-size: larger;" class="inline-flex">Lien</div>
+				</div>
+				
+			</div>
+			<div name="main-article" id="main-article" class="mx-auto static flex-1" style="background: linear-gradient(#5972e6, #041561); ">
+				<div class="relative mx-auto" style="background: linear-gradient(darkgray, 90%,#C0C0C0); margin-left: 0px;">	
+					<div class="">
+						<img src="images/pollu.jpeg" class="relative h-32" style="left: 2%; top: 10px;"/>	
+						<div class="absolute text-5xl underline font-serif" style="left: 12%; top: 40px;">Qu'est-ce qui est réellement polluant sur le web?</div>
+					</div>
+					<div class="relative" style="top: 10px; left: 5px; margin-right: 5px;">
+						<p style="text-indent: 20px; left: 0px;">Si Internet était un pays, il serait le cinquième plus grand pollueur dans le monde. En effet, les nouvelles technologies de l’Information et de la Communication (NTIC) ont à jamais bouleversé notre quotidien. On pourrait penser qu’elles répondent aux problèmes environnementaux: moins de déplacements et donc moins d'émissions de CO2, moins de papier utilisé et donc une déforestation stoppée. Mais qu'en est-il réellement? Si les moyens de communications numériques sont bel et bien virtuels, les transits entre les serveurs informatiques sont bien réels et polluent la planète. </p>
+						<br>
+						<hr style="width: 100%; display: block; background-color: gray; border-width: 1px; border-style: solid;"></hr>
+						<div class="text-4xl text-blue-800 underline italic" style="text-indent: 50px;">
+							Qu'est ce qu'un data center?
+						</div>
+						<div class="relative italic text-sm" style="left: 25%;">
+							Selon <a class="text-red-700 italic underline" id="vinciSource">Vinci Energies</a>
+							<div class="h-6 bg-green-600 block" style="stop-opacity: inherit; width: 150px;" id="vinciWebsite">
+								<div class="text-xl" style="margin-top: 0px; position: absolute; top: 17px; left: 10px;">Accéder au site</div>
+							</div>
+						</div>
+						<div class="text-xl leading-tight" style="text-indent: 30px; margin-left: 15px; margin-right: 15px;">
+							Le data center (centre de traitement des données en français) est l’un des éléments nécessaires au traitement et stockage des données numériques. Indispensable à Internet, il a connu un fort développement avec l’essor du cloud computing. Concrètement, il s’agit d’un lieu physique contenant les serveurs informatiques qui stockent les données numériques et dans lequel les entreprises peuvent notamment louer un espace de stockage et ainsi éviter la présence de serveurs dans leurs locaux.
+						</div>
+						<div style="text-align: center; display: block; align-self: center;">
+							<img src="images/datacenter.jpg" style="position: relative; left: 85%; height: 95px; width: 145px; top: -20px;" />
+						</div>
+						<div class="text-4xl text-blue-800 underline italic" style="text-indent: 50px; top: -20px; position:relative">
+							Localisation des data centers en France
+						</div>
+						<div class="" style="position: relative; left:0%">
+							<img src="images/localisation datacenters.png" style="height: 80%; width: 100%;" title="Carte de la France avec position des data center" id="mapFr"/>
+						</div>
+						<br>
+						<br>
+						<div>
+							<div class="text-4xl text-blue-800 underline italic" style="text-indent: 50px; top: -20px; position:relative">
+								Pourquoi un data center est-il si polluant?
+							</div>
+							<div class="relative italic text-sm" style="left: 30%; position: relative; top: -20px;">
+								Selon <a class="text-red-700 italic underline" id="vinciSource">Sciences et Avenirs</a>
+								<div class="h-6 bg-green-600 block link" style="stop-opacity: inherit; width: 150px;" id="scienceWebsite">
+									<div class="text-xl" style="margin-top: 0px; position: absolute; top: 17px; left: 10px;">Accéder au site</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-xl leading-tight" style="text-indent: 30px; margin-left: 15px; margin-right: 15px;">
+							Le numérique, qui a pris une place inédite dans nos vies, a lui aussi une empreinte écologique. Dans son ensemble, le secteur du numérique engloutissait près de 10% de la production électrique mondiale en 2015. Les data centers en accaparent 18%, selon une synthèse publiée fin 2017 par l'association négaWatt et reprise par le site GreenIT.
+							<br>
+							En France, la consommation des data centers s'élevait à environ 3 TWh en 2015, soit davantage que la consommation électrique de la ville de Lyon, selon l'Union française de l'électricité (UFE). À quoi tient-elle ? Il faut bien entendu alimenter en électricité les nombreux appareils. Mais elle est principalement dissipée sous forme de chaleur lorsqu'elle passe dans un matériau conducteur, ce qu'on appelle "effet joule". De ce fait, environ 50% de la facture d'électricité d'un data center... tient à la climatisation
+							<!-- <br> -->
+							<!-- En effet, les data centers sont des ordinateurs mis en réseau pour stocker et traiter des données. Néanmoins, leur fonctionnement en permanence nécessite une certaine quantitée d'énergie tant bien pour les faire fonctionner que pour les refroidir.  -->
+						</div>
+						<br>
+						<div class="mx-auto flex items-stretch" style="position: relative; left: 200px;">
+							<div class="flex-1">
+								<img src="images/parisien_datacenterPollu.jpg" style="width: 500px; height: 350px;" class="inline-flex" />
+								<img src="images/negawatt_it.jpg" class="inline-flex" style="position: relative; top: 0px; width: 400; height: 350px;" />
+							</div>
+						</div>
+						<br>
+						<br>
+						<div class="text-4xl text-blue-800 underline italic" style="text-indent: 50px; top: -20px; position:relative">
+							Tableau d'équivalence
+						</div>
+						<br>
+						<div class="text-center">
+							<table class="border-collapse border-2 border-teal-800 center content-center text-3xl" align="center">
+								<thead>
+									<tr>
+										<th class="border border-gray-400 px-4 py-2 text-gray-800">Action sur le web</th>
+										<th class="border border-gray-400 px-4 py-2 text-gray-800">Equivalent en pollution</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="border border-gray-400 px-4 py-2">Un mail</td>
+										<td class="border border-gray-400 px-4 py-2">Un sac plastique <br> soit environ 10g de CO2</td>
+									</tr>
+									<tr>
+										<td class="border border-gray-400 px-4 py-2">Une pièce jointe</td>
+										<td class="border border-gray-400 px-4 py-2">Une ampoule pendant 1 heure <br>soit 19g de CO2</td>
+									</tr>
+									<tr>
+										<td class="border border-gray-400 px-4 py-2">Une recherche Internet</td>
+										<td class="border border-gray-400 px-4 py-2">7g de CO2</td>
+									</tr>
+									<tr>
+										<td class="border border-gray-400 px-4 py-2">Google</td>
+										<td class="border border-gray-400 px-4 py-2">500 kg de CO2/seconde</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<br>
+						<div>
+							<div class="text-4xl text-blue-800 underline italic" style="text-indent: 50px; top: -20px; position:relative">
+								Comment diminuer la pollution liée au web?
+							</div>
+							<div class="relative italic text-sm" style="left: 30%; position: relative; top: -20px;">
+								Selon <a class="text-red-700 italic underline" id="vinciSource">Hippocampe.fr</a>
+								<div class="h-6 bg-green-600 block link" style="stop-opacity: inherit; width: 150px;" id="hippoWebsite">
+									<div class="text-xl" style="margin-top: 0px; position: absolute; top: 17px; left: 10px;">Accéder au site</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-xl leading-tight" style="text-indent: 30px; margin-left: 15px; margin-right: 15px;">
+							Pour réduire la pollution liée au web, il existe plusieurs solutions. En voici une petite liste des actions que nous pouvons faire:<br>
+							<ul class="list-disc" style="position: relative; left: 75px;">
+								<li>Désactivez vos notifications</li>
+								<li>Triez et supprimez les mails inutiles</li>
+								<li>Faites un bilan de votre activité numérique pour désactiver ou désinstaller les applications peu ou pas utilisées</li>
+								<li>Utilisez un moteur de recherche responsable</li>
+								<li>Tapez directement l'url du site que vous voulez visiter sans passer par le moteur de recherche (Sites en Favoris)</li>
+								<li>Evitez les fautes d'orthographes lors de votre recherche afin d'éviter d'en relancer une autre	</li>
+							</ul> 
+						</div>
+						<br>
+						<br>
+						<div class="text-2xl text-red-600 underline italic" style="text-indent: 15px; top: -20px; position:relative">
+							Sources:
+						</div>
+						<ul class="list-disc" style="position: relative; left: 20px; color: snow;">
+							<li onclick="window.open('https://bfmbusiness.bfmtv.com/entreprise/comment-internet-pollue-le-monde-888189.html')">BFM Business</li>
+							<li onclick="window.open('https://www.lebigdata.fr/definition-data-center-centre-donnees')">Le BigData</li>
+							<li onclick="window.open('https://www.vinci-energies.com/cest-deja-demain/pour-un-monde-connecte/data-center-bienvenue-dans-les-usines-a-donnees/')">Vinci Energies</li>
+							<li onclick="window.open('https://www.sciencesetavenir.fr/high-tech/informatique/numerique-et-ecologie-les-data-centers-des-gouffres-energetiques_121838')">Sciences et Avenirs</li>
+							<li onclick="window.open('https://www.hippocampe.fr/blog/pollution-numerique-internet-6eme-nation-la-plus-polluante-du-monde/')">Hippocampe.fr</li>
+							<li onclick="window.open('http://www.leparisien.fr/societe/la-pollution-invisible-du-net-10-01-2017-6546294.php')">Le Parisien</li>
+							<li onclick="window.open('https://cleanfox.io/blog/astuces-fr/applications-services/pollution-numerique-la-navigation-web/')">Cleanfox</li>
+							<li onclick="window.open('https://information.tv5monde.com/info/pollution-numerique-comment-reduire-ses-effets-au-quotidien-279020')">information.tv5monde.com</li>
+							<li onclick="window.open('https://www.businessinsider.fr/mail-streaming-cloud-20-gestes-pour-reduire-sa-pollution-numerique/#evitez-le-streaming-video-pour-ecouter-seulement-de-la-musique')">businessinsider</li>
+						</ul>
+						<br>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!-- <p> Si Internet était un pays, il serait le cinquième grand pollueur dans le monde. En effet, les nouvelles technologies de l’Information et de la Communication (NTIC) ont à jamais bouleversé notre quotidien. On pourrait penser qu’elles répondent aux problèmes environnementaux: moins de déplacements et donc moins d'émissions de CO2, moins de papier utilisé et donc une déforestation stoppée. Mais qu'en est-il réellement? Si les moyens de communications numériques sont bel et bien virtuels, les transits entre les serveurs informatiques sont bien réels et polluent la planète. </p> -->
+		
+		<!-- <h3>Qu'est ce qu'un datacenter?</h3> -->
+		<!-- <h4>Explication</h4> -->
+		<!-- <h5 style="text-align: center;"> Un data center ou centre de données, est une infrastructure composée d’un réseau d’ordinateurs et d’espaces de stockage. Cette infrastructure peut être utilisée par les entreprises pour organiser, traiter, stocker et entreposer de grandes quantités de données. En règle générale, une entreprise repose fortement sur les applications, les services et les données contenues dans un centre de données. Il s’agit donc d’une part essentielle de l’entreprise au quotidien. -->
+			<!-- <br/> -->
+			<!-- Un data center est un ensemble d’éléments. Un centre de données basique regroupe des serveurs, des sous-systèmes de stockage, des commutateurs de réseau, des routeurs, des firewalls, et bien entendu des câbles et des racks physiques permettant d’organiser et d’interconnecter tout cet équipement informatique.</h5> -->
+
+		<!-- <h4>Localisation en France</h4> -->
+		<!-- <h5></h5> -->
+		
+		<!-- <table border="1" style="align-content: center; text-align: center;">
+			<tr>									
+				<td>Action sur le WEB </td>		
+				<td>envoyer mail</td>
+				<td>une piece jointe </td>	
+				<td>Google </td>	
+				<td>recherche sur un navigateur</td>	
+				<td rowspan="2"><img src="images/Leteinte.svg" /></td>				
+			</tr>
+			
+			<tr>									
+				<td>Equivalent de pollution </td>		
+				<td>sac plastique </td>
+				<td></td>									
+				<td></td>									
+				<td></td>									
+			</tr>								
+		</table> -->
+	
+		<div class="w-auto flex-col" style="background: linear-gradient(#C0C0C0,90%,#322C7C);">
+			<div style="position: relative; left: 150px; height: 400px;" class="h-auto">
+				<div class="text-4xl underline ">Commentaires:</div>
+				<textarea style="resize: none; width: 75%; height: 250px; font-size: small;" id="commentary">
+
+				</textarea>
+				<div id="publishcom" class="inline-block text-center commentB" style="height: 250px;background-color: #D4D4D4; position: relative; top: -204px; width: 200px;"><p class="relative text-4xl commentB" style="top: 95px;">Publier</p></div>
+			</div>
+			<div id="commentaireL" style="position: relative;top:-75px; left: 150px; max-width: 75%;" class="flex-col-reverse content-between">
+				<div id="CommentMod" style="display: none;">
+					<div class="relative flex-1" style="background-color: #E6E6E6;">
+						<div style="position: relative; top: 10px; left:10px">
+							<svg class="flex-1" viewBox="0 0 20 20" width="30px" height="30px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="black">
+								<path d="M10,20 C15.5228475,20 20,15.5228475 20,10 C20,4.4771525 15.5228475,0 10,0 C4.4771525,0 0,4.4771525 0,10 C0,15.5228475 4.4771525,20 10,20 Z M6.99999861,6.00166547 C6.99999861,4.34389141 8.3465151,3 9.99999722,3 C11.6568507,3 12.9999958,4.33902013 12.9999958,6.00166547 L12.9999958,7.99833453 C12.9999958,9.65610859 11.6534793,11 9.99999722,11 C8.34314374,11 6.99999861,9.66097987 6.99999861,7.99833453 L6.99999861,6.00166547 Z M3.34715433,14.4444439 C5.37306718,13.5169611 7.62616222,13 10,13 C12.3738388,13 14.6269347,13.5169615 16.6528458,14.4444437 C15.2177146,16.5884188 12.7737035,18 10,18 C7.22629656,18 4.78228556,16.5884189 3.34715433,14.4444439 L3.34715433,14.4444439 Z" id="Combined-Shape"></path>				
+							</svg>
+						</div>
+						<div id="comment" style="position: relative; left: 50px; top:-20px;" class="inline flex-1">
+							azdazd
+						</div>
+						<br>
+						
+					</div>
+					<br>
+				</div>
+				
+				
+					
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="w-auto footer" style="color:#B9EBED; text-align: center; height: 150px; ">
+			<br>
+			<br>
+			<br>
+			<p>David Luca / Quentin Viette | 2°f | 2020 | ISC </p><br>
+			<p style="color:#1D3656">Copyright ©2020 David Luca, Some Rights Reserved.</p>
+		</div>
+		
+	
+		
+		
+		
+		<!-- <a href="https://bfmbusiness.bfmtv.com/entreprise/comment-internet-pollue-le-monde-888189.html" target="_blank">BFM Business </a>
+		<br/><a href="https://www.lebigdata.fr/definition-data-center-centre-donnees" target="_blank">Le BigData </a> -->
+		
+		<script type="text/javascript" src="engine.js"></script>
+		<script>
+			$(window).scroll(function(event){
+				// parseFloat($("#shareMenu").css("height").replace(/[^-\d\.]/g, '')) + parseFloat($("#menuLeft").css("height").replace(/[^-\d\.]/g, ''))
+				if(parseFloat($("#menuLeft").css("height").replace(/[^-\d\.]/g, '')) >= (window.pageYOffset + parseFloat($("#shareMenu").css("height").replace(/[^-\d\.]/g, '')))){
+					$("#shareMenu").animate({top:window.pageYOffset}, 10);
+				}else{
+					$("#shareMenu").animate({top:(parseFloat($("#menuLeft").css("height").replace(/[^-\d\.]/g, '')) - parseFloat($("#shareMenu").css("height").replace(/[^-\d\.]/g, '')))}, 10);
+				}
+				
+			})
+		</script>
+
+	</body>
+</html>
